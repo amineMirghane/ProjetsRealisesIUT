@@ -18,6 +18,6 @@ Pour consulter les différents projets réalisés, veuillez naviguer dans les do
 
 ## Contact
 
-Si vous avez des questions sur l'un des projets ou si vous souhaitez discuter d'opportunités de collaboration, n'hésitez pas à me contacter via [amine.mirghane@outlook.com].
+Si vous avez des questions sur l'un des projets ou si vous souhaitez discuter d'opportunités de collaboration, n'hésitez pas à me contacter via mon adresse mail [amine.mirghane@outlook.com].
 
 Merci de votre intérêt pour mon travail !
