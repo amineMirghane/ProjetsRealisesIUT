@@ -1,0 +1,9 @@
+Dans le cadre de mes études, j'ai pu réaliser avec 2 camarades de classe, un site qui permet de gérer une pizzeria fictive (HeyPizza) en utilisant les langages HTML, CSS et PHP.
+
+Pour cela nous avons créé 2 sites web: 
+
+-un premier site pour le client de la pizzeria (que vous pouvez consulter sur ce lien: https://projets.iut-orsay.fr/saes3-amirgha/V_Css3/routeur.php). Il s'agit du site principal permettant au client de consulter la carte, ajouter des produits au panier et passer une commande. Nous nous sommes beaucoup concentrés sur l'interface utilisateur du client, afin qu'elle soit à la fois facile à prendre en main et esthétique (en ajoutant des animations, en utilisant une charte graphique, en s'inspirant de sites de pizzeria comme Pizza Hut ...).
+
+-un second site pour le gérant de la pizzeria (que vous pouvez consulter sur ce lien: https://projets.iut-orsay.fr/saes3-amirgha/V_Admin/routeur.php) . À partir de ce site web le gérant peut ajouter des pizzas et produits à la carte, mettre en avant une pizza et consulter son chiffre d'affaires et ses meilleurs clients. 
+
+Voici également un lien permettant de consulter le code de programmation du site: https://github.com/Yanni-91/Projet-Pizza.
