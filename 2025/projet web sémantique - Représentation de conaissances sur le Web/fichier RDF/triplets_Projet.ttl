@@ -1,0 +1,538 @@
+@base <http://example.com/base/> .
+@prefix iut: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/> .
+@prefix film: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/Film/> .
+@prefix genre: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/Genre/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+film:18 a iut:Film;
+  iut:nom "Spider-Man: Across the Spider-Verse"@en;
+  iut:anneeDeSortie "2023"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+iut:GENRE_03 a iut:Genre;
+  iut:nom iut:Animation .
+
+film:32 a iut:Film;
+  iut:nom "Oppenheimer"@en;
+  iut:anneeDeSortie "2023"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+iut:GENRE_04 a iut:Genre;
+  iut:nom iut:Biography .
+
+film:77 a iut:Film;
+  iut:nom "Joker"@en;
+  iut:anneeDeSortie "2019"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+iut:GENRE_06 a iut:Genre;
+  iut:nom iut:Crime .
+
+film:76 a iut:Film;
+  iut:nom "Avengers: Endgame"@en;
+  iut:anneeDeSortie "2019"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+iut:GENRE_01 a iut:Genre;
+  iut:nom iut:Action .
+
+film:37 a iut:Film;
+  iut:nom "Parasite"@en;
+  iut:anneeDeSortie "2019"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+iut:GENRE_07 a iut:Genre;
+  iut:nom iut:Drama .
+
+film:81 a iut:Film;
+  iut:nom "Capernaum"@en;
+  iut:anneeDeSortie "2018"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:63 a iut:Film;
+  iut:nom "Avengers: Infinity War"@en;
+  iut:anneeDeSortie "2018"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:67 a iut:Film;
+  iut:nom "Spider-Man: Into the Spider-Verse"@en;
+  iut:anneeDeSortie "2018"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:73 a iut:Film;
+  iut:nom "Coco"@en;
+  iut:anneeDeSortie "2017"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:78 a iut:Film;
+  iut:nom "Your Name."@en;
+  iut:anneeDeSortie "2016"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:43 a iut:Film;
+  iut:nom "Whiplash"@en;
+  iut:anneeDeSortie "2014"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:19 a iut:Film;
+  iut:nom "Interstellar"@en;
+  iut:anneeDeSortie "2014"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_02 .
+
+iut:GENRE_02 a iut:Genre;
+  iut:nom iut:Adventure .
+
+film:55 a iut:Film;
+  iut:nom "Django Unchained"@en;
+  iut:anneeDeSortie "2012"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:95 a iut:Film;
+  iut:nom "The Hunt"@en;
+  iut:anneeDeSortie "2012"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:70 a iut:Film;
+  iut:nom "The Dark Knight Rises"@en;
+  iut:anneeDeSortie "2012"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:48 a iut:Film;
+  iut:nom "The Intouchables"@en;
+  iut:anneeDeSortie "2011"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+film:14 a iut:Film;
+  iut:nom "Inception"@en;
+  iut:anneeDeSortie "2010"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:91 a iut:Film;
+  iut:nom "Toy Story 3"@en;
+  iut:anneeDeSortie "2010"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:69 a iut:Film;
+  iut:nom "Inglourious Basterds"@en;
+  iut:anneeDeSortie "2009"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_02 .
+
+film:79 a iut:Film;
+  iut:nom "3 Idiots"@en;
+  iut:anneeDeSortie "2009"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+iut:GENRE_05 a iut:Genre;
+  iut:nom iut:Comedy .
+
+film:59 a iut:Film;
+  iut:nom "WALL-E"@en;
+  iut:anneeDeSortie "2008"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:3 a iut:Film;
+  iut:nom "The Dark Knight"@en;
+  iut:anneeDeSortie "2008"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:44 a iut:Film;
+  iut:nom "The Prestige"@en;
+  iut:anneeDeSortie "2006"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:60 a iut:Film;
+  iut:nom "The Lives of Others"@en;
+  iut:anneeDeSortie "2006"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:93 a iut:Film;
+  iut:nom "Eternal Sunshine of the Spotless Mind"@en;
+  iut:anneeDeSortie "2004"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:72 a iut:Film;
+  iut:nom "Oldboy"@en;
+  iut:anneeDeSortie "2003"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:7 a iut:Film;
+  iut:nom "The Lord of the Rings: The Return of the King"@en;
+  iut:anneeDeSortie "2003"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:13 a iut:Film;
+  iut:nom "The Lord of the Rings: The Two Towers"@en;
+  iut:anneeDeSortie "2002"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:35 a iut:Film;
+  iut:nom "The Pianist"@en;
+  iut:anneeDeSortie "2002"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+film:26 a iut:Film;
+  iut:nom "City of God"@en;
+  iut:anneeDeSortie "2002"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:31 a iut:Film;
+  iut:nom "Spirited Away"@en;
+  iut:anneeDeSortie "2001"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:9 a iut:Film;
+  iut:nom "The Lord of the Rings: The Fellowship of the Ring"@en;
+  iut:anneeDeSortie "2001"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:41 a iut:Film;
+  iut:nom "American History X"@en;
+  iut:anneeDeSortie "2000"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:90 a iut:Film;
+  iut:nom "Requiem for a Dream"@en;
+  iut:anneeDeSortie "2000"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:57 a iut:Film;
+  iut:nom "Memento"@en;
+  iut:anneeDeSortie "2000"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_15 .
+
+iut:GENRE_15 a iut:Genre;
+  iut:nom iut:Mystery .
+
+film:28 a iut:Film;
+  iut:nom "The Green Mile"@en;
+  iut:anneeDeSortie "1999"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:84 a iut:Film;
+  iut:nom "American Beauty"@en;
+  iut:anneeDeSortie "1999"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:16 a iut:Film;
+  iut:nom "The Matrix"@en;
+  iut:anneeDeSortie "1999"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:12 a iut:Film;
+  iut:nom "Fight Club"@en;
+  iut:anneeDeSortie "1999"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:42 a iut:Film;
+  iut:nom "The Departed"@en;
+  iut:anneeDeSortie "1998"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:25 a iut:Film;
+  iut:nom "Saving Private Ryan"@en;
+  iut:anneeDeSortie "1998"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:86 a iut:Film;
+  iut:nom "Princess Mononoke"@en;
+  iut:anneeDeSortie "1997"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:27 a iut:Film;
+  iut:nom "Life Is Beautiful"@en;
+  iut:anneeDeSortie "1997"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+film:87 a iut:Film;
+  iut:nom "Good Will Hunting"@en;
+  iut:anneeDeSortie "1997"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:83 a iut:Film;
+  iut:nom "Toy Story"@en;
+  iut:anneeDeSortie "1995"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:21 a iut:Film;
+  iut:nom "Se7en"@en;
+  iut:anneeDeSortie "1995"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:85 a iut:Film;
+  iut:nom "Braveheart"@en;
+  iut:anneeDeSortie "1995"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+film:45 a iut:Film;
+  iut:nom "The Usual Suspects"@en;
+  iut:anneeDeSortie "1995"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:1 a iut:Film;
+  iut:nom "The Shawshank Redemption"@en;
+  iut:anneeDeSortie "1994"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:40 a iut:Film;
+  iut:nom "Léon: The Professional"@en;
+  iut:anneeDeSortie "1994"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:8 a iut:Film;
+  iut:nom "Pulp Fiction"@en;
+  iut:anneeDeSortie "1994"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:39 a iut:Film;
+  iut:nom "The Lion King"@en;
+  iut:anneeDeSortie "1994"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:11 a iut:Film;
+  iut:nom "Forrest Gump"@en;
+  iut:anneeDeSortie "1994"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:38 a iut:Film;
+  iut:nom "Gladiator"@en;
+  iut:anneeDeSortie "1994"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:6 a iut:Film;
+  iut:nom "Schindler's List"@en;
+  iut:anneeDeSortie "1993"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+film:96 a iut:Film;
+  iut:nom "Reservoir Dogs"@en;
+  iut:anneeDeSortie "1992"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:30 a iut:Film;
+  iut:nom "Terminator 2: Judgment Day"@en;
+  iut:anneeDeSortie "1991"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:24 a iut:Film;
+  iut:nom "The Silence of the Lambs"@en;
+  iut:anneeDeSortie "1991"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:17 a iut:Film;
+  iut:nom "Goodfellas"@en;
+  iut:anneeDeSortie "1990"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+film:50 a iut:Film;
+  iut:nom "Cinema Paradiso"@en;
+  iut:anneeDeSortie "1988"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:46 a iut:Film;
+  iut:nom "Grave of the Fireflies"@en;
+  iut:anneeDeSortie "1988"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_03 .
+
+film:68 a iut:Film;
+  iut:nom "Aliens"@en;
+  iut:anneeDeSortie "1986"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:34 a iut:Film;
+  iut:nom "Back to the Future"@en;
+  iut:anneeDeSortie "1985"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_02 .
+
+film:82 a iut:Film;
+  iut:nom "Come and See"@en;
+  iut:anneeDeSortie "1985"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:88 a iut:Film;
+  iut:nom "Once Upon a Time in America"@en;
+  iut:anneeDeSortie "1984"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:74 a iut:Film;
+  iut:nom "Amadeus"@en;
+  iut:anneeDeSortie "1984"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_04 .
+
+film:92 a iut:Film;
+  iut:nom "Star Wars: Episode VI - Return of the Jedi"@en;
+  iut:anneeDeSortie "1983"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:75 a iut:Film;
+  iut:nom "The Boat"@en;
+  iut:anneeDeSortie "1981"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:58 a iut:Film;
+  iut:nom "Indiana Jones and the Raiders of the Lost Ark"@en;
+  iut:anneeDeSortie "1981"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:15 a iut:Film;
+  iut:nom "Star Wars: Episode V - The Empire Strikes Back"@en;
+  iut:anneeDeSortie "1980"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:64 a iut:Film;
+  iut:nom "The Shining"@en;
+  iut:anneeDeSortie "1980"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:56 a iut:Film;
+  iut:nom "Apocalypse Now"@en;
+  iut:anneeDeSortie "1979"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:53 a iut:Film;
+  iut:nom "Alien"@en;
+  iut:anneeDeSortie "1979"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_12 .
+
+iut:GENRE_12 a iut:Genre;
+  iut:nom iut:Horror .
+
+film:29 a iut:Film;
+  iut:nom "Star Wars: Episode IV - A New Hope"@en;
+  iut:anneeDeSortie "1977"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:20 a iut:Film;
+  iut:nom "One Flew Over the Cuckoo's Nest"@en;
+  iut:anneeDeSortie "1975"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:4 a iut:Film;
+  iut:nom "The Godfather Part II"@en;
+  iut:anneeDeSortie "1974"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:2 a iut:Film;
+  iut:nom "The Godfather"@en;
+  iut:anneeDeSortie "1972"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:94 a iut:Film;
+  iut:nom "2001: A Space Odyssey"@en;
+  iut:anneeDeSortie "1968"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_02 .
+
+film:51 a iut:Film;
+  iut:nom "Once Upon a Time in the West"@en;
+  iut:anneeDeSortie "1968"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_20 .
+
+iut:GENRE_20 a iut:Genre;
+  iut:nom iut:Western .
+
+film:10 a iut:Film;
+  iut:nom "The Good, the Bad and the Ugly"@en;
+  iut:anneeDeSortie "1966"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_02 .
+
+film:71 a iut:Film;
+  iut:nom "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb"@en;
+  iut:anneeDeSortie "1964"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+film:80 a iut:Film;
+  iut:nom "High and Low"@en;
+  iut:anneeDeSortie "1963"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:98 a iut:Film;
+  iut:nom "Lawrence of Arabia"@en;
+  iut:anneeDeSortie "1962"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_02 .
+
+film:33 a iut:Film;
+  iut:nom "Harakiri"@en;
+  iut:anneeDeSortie "1962"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:36 a iut:Film;
+  iut:nom "Psycho"@en;
+  iut:anneeDeSortie "1960"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_12 .
+
+film:66 a iut:Film;
+  iut:nom "Witness for the Prosecution"@en;
+  iut:anneeDeSortie "1957"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:62 a iut:Film;
+  iut:nom "Paths of Glory"@en;
+  iut:anneeDeSortie "1957"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:5 a iut:Film;
+  iut:nom "12 Angry Men"@en;
+  iut:anneeDeSortie "1957"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .
+
+film:52 a iut:Film;
+  iut:nom "Rear Window"@en;
+  iut:anneeDeSortie "1954"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_15 .
+
+film:23 a iut:Film;
+  iut:nom "Seven Samurai"@en;
+  iut:anneeDeSortie "1954"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_01 .
+
+film:97 a iut:Film;
+  iut:nom "Ikiru"@en;
+  iut:anneeDeSortie "1952"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:89 a iut:Film;
+  iut:nom "Singin' in the Rain"@en;
+  iut:anneeDeSortie "1952"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+film:61 a iut:Film;
+  iut:nom "Sunset Blvd."@en;
+  iut:anneeDeSortie "1950"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:22 a iut:Film;
+  iut:nom "It's a Wonderful Life"@en;
+  iut:anneeDeSortie "1946"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:47 a iut:Film;
+  iut:nom "Casablanca"@en;
+  iut:anneeDeSortie "1942"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:99 a iut:Film;
+  iut:nom "Citizen Kane"@en;
+  iut:anneeDeSortie "1941"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_07 .
+
+film:65 a iut:Film;
+  iut:nom "The Great Dictator"@en;
+  iut:anneeDeSortie "1940"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+film:49 a iut:Film;
+  iut:nom "Modern Times"@en;
+  iut:anneeDeSortie "1936"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+film:54 a iut:Film;
+  iut:nom "City Lights"@en;
+  iut:anneeDeSortie "1931"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_05 .
+
+film:100 a iut:Film;
+  iut:nom "M"@en;
+  iut:anneeDeSortie "1931"^^xsd:gYear;
+  iut:aPourGenre iut:GENRE_06 .

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-App="KRRclass" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> Simple SW Application </title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/css-custom.css" rel="stylesheet">
+</head>
+
+<body ng-controller="MainCtrl">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-acl mb-5">
+    <a class="navbar-brand" href="#">
+      <img src="css/upsaclay.jpg" height="80" alt="">
+      My Simple Semantic Web Application 
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mb-5">
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8">
+          <h2><strong>Quels genres de films parmi les plus populaires remportent le plus de récompenses (awards) ?</strong></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8 align-self-center">
+          <!-- TODO : Ex 2 here -->
+          <h2>Quel graphe de connaissances allez-vous interroger ?</h2>
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="myInputEndPoint">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8">
+          <h2>La requête SPARQL afin de répondre à la question</h2>
+          <div>
+            <pre>
+    SELECT ?nomGenre (COUNT(?genre) AS ?nbAwardsReçus)
+    WHERE {
+      ?genre a iut:Genre;
+             iut:nom ?nomGenre.
+      ?film a iut:Film;
+            iut:nom ?nomFilm;
+            iut:aPourGenre ?genre;
+            iut:award ?medailleAward.
+    }
+    GROUP BY ?genre ?nomGenre
+    ORDER BY DESC(?nbAwardsReçus)
+    LIMIT 100
+            </pre>
+            <button class="btn btn-outline-secondary mt-3" ng-click="startMyAwesomeApp()" type="button">GO!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8">
+          <!-- Message de résultat -->
+          <h2 class="text-danger">{{ myDisplayMessage }}</h2>
+                  
+          <!-- Canvas avec options pour la légende -->
+          <canvas class="chart chart-pie mt-4"
+                  chart-data="myDynamicData"
+                  chart-labels="myDynamicLabels"
+                  chart-options="chartOptions">
+          </canvas>
+        </div>
+      </div>
+    </div>
+    
+
+<!-- JavaScript libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/angular-chart.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@prefix iut: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/> .
+@prefix film: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/Film/> .
+@prefix genre: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/Genre/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+film:18 a iut:Film;
+        iut:nom "Spider-Man: Across the Spider-Verse"@fr;
+        iut:anneeSortieFilm  "2023"^^xsd:gYear;
+        iut:aPourGenre genre:GENRE_03.
+
+
+genre:GENRE_03 a iut:Genre;
+                iut:nom "Animation"@en.
+                

@@ -1,0 +1,101 @@
+code_film;title;nom_genre;year;code_genre
+18;Spider-Man: Across the Spider-Verse;Animation;2023;GENRE_03
+32;Oppenheimer;Biography;2023;GENRE_04
+77;Joker;Crime;2019;GENRE_06
+76;Avengers: Endgame;Action;2019;GENRE_01
+37;Parasite;Drama;2019;GENRE_07
+81;Capernaum;Drama;2018;GENRE_07
+63;Avengers: Infinity War;Action;2018;GENRE_01
+67;Spider-Man: Into the Spider-Verse;Animation;2018;GENRE_03
+73;Coco;Animation;2017;GENRE_03
+78;Your Name.;Animation;2016;GENRE_03
+43;Whiplash;Drama;2014;GENRE_07
+19;Interstellar;Adventure;2014;GENRE_02
+55;Django Unchained;Drama;2012;GENRE_07
+95;The Hunt;Drama;2012;GENRE_07
+70;The Dark Knight Rises;Action;2012;GENRE_01
+48;The Intouchables;Biography;2011;GENRE_04
+14;Inception;Action;2010;GENRE_01
+91;Toy Story 3;Animation;2010;GENRE_03
+69;Inglourious Basterds;Adventure;2009;GENRE_02
+79;3 Idiots;Comedy;2009;GENRE_05
+59;WALL-E;Animation;2008;GENRE_03
+3;The Dark Knight;Action;2008;GENRE_01
+44;The Prestige;Drama;2006;GENRE_07
+60;The Lives of Others;Drama;2006;GENRE_07
+93;Eternal Sunshine of the Spotless Mind;Drama;2004;GENRE_07
+72;Oldboy;Action;2003;GENRE_01
+7;The Lord of the Rings: The Return of the King;Action;2003;GENRE_01
+13;The Lord of the Rings: The Two Towers;Action;2002;GENRE_01
+35;The Pianist;Biography;2002;GENRE_04
+26;City of God;Crime;2002;GENRE_06
+31;Spirited Away;Animation;2001;GENRE_03
+9;The Lord of the Rings: The Fellowship of the Ring;Action;2001;GENRE_01
+41;American History X;Crime;2000;GENRE_06
+90;Requiem for a Dream;Drama;2000;GENRE_07
+57;Memento;Mystery;2000;GENRE_15
+28;The Green Mile;Crime;1999;GENRE_06
+84;American Beauty;Drama;1999;GENRE_07
+16;The Matrix;Action;1999;GENRE_01
+12;Fight Club;Drama;1999;GENRE_07
+42;The Departed;Crime;1998;GENRE_06
+25;Saving Private Ryan;Drama;1998;GENRE_07
+86;Princess Mononoke;Animation;1997;GENRE_03
+27;Life Is Beautiful;Comedy;1997;GENRE_05
+87;Good Will Hunting;Drama;1997;GENRE_07
+83;Toy Story;Animation;1995;GENRE_03
+21;Se7en;Crime;1995;GENRE_06
+85;Braveheart;Biography;1995;GENRE_04
+45;The Usual Suspects;Crime;1995;GENRE_06
+1;The Shawshank Redemption;Drama;1994;GENRE_07
+40;Léon: The Professional;Action;1994;GENRE_01
+8;Pulp Fiction;Crime;1994;GENRE_06
+39;The Lion King;Animation;1994;GENRE_03
+11;Forrest Gump;Drama;1994;GENRE_07
+38;Gladiator;Action;1994;GENRE_01
+6;Schindler's List;Biography;1993;GENRE_04
+96;Reservoir Dogs;Crime;1992;GENRE_06
+30;Terminator 2: Judgment Day;Action;1991;GENRE_01
+24;The Silence of the Lambs;Crime;1991;GENRE_06
+17;Goodfellas;Biography;1990;GENRE_04
+50;Cinema Paradiso;Drama;1988;GENRE_07
+46;Grave of the Fireflies;Animation;1988;GENRE_03
+68;Aliens;Action;1986;GENRE_01
+34;Back to the Future;Adventure;1985;GENRE_02
+82;Come and See;Drama;1985;GENRE_07
+88;Once Upon a Time in America;Crime;1984;GENRE_06
+74;Amadeus;Biography;1984;GENRE_04
+92;Star Wars: Episode VI - Return of the Jedi;Action;1983;GENRE_01
+75;The Boat;Drama;1981;GENRE_07
+58;Indiana Jones and the Raiders of the Lost Ark;Action;1981;GENRE_01
+15;Star Wars: Episode V - The Empire Strikes Back;Action;1980;GENRE_01
+64;The Shining;Drama;1980;GENRE_07
+56;Apocalypse Now;Drama;1979;GENRE_07
+53;Alien;Horror;1979;GENRE_12
+29;Star Wars: Episode IV - A New Hope;Action;1977;GENRE_01
+20;One Flew Over the Cuckoo's Nest;Drama;1975;GENRE_07
+4;The Godfather Part II;Crime;1974;GENRE_06
+2;The Godfather;Crime;1972;GENRE_06
+94;2001: A Space Odyssey;Adventure;1968;GENRE_02
+51;Once Upon a Time in the West;Western;1968;GENRE_20
+10;The Good, the Bad and the Ugly;Adventure;1966;GENRE_02
+71;Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb;Comedy;1964;GENRE_05
+80;High and Low;Crime;1963;GENRE_06
+98;Lawrence of Arabia;Adventure;1962;GENRE_02
+33;Harakiri;Action;1962;GENRE_01
+36;Psycho;Horror;1960;GENRE_12
+66;Witness for the Prosecution;Crime;1957;GENRE_06
+62;Paths of Glory;Drama;1957;GENRE_07
+5;12 Angry Men;Crime;1957;GENRE_06
+52;Rear Window;Mystery;1954;GENRE_15
+23;Seven Samurai;Action;1954;GENRE_01
+97;Ikiru;Drama;1952;GENRE_07
+89;Singin' in the Rain;Comedy;1952;GENRE_05
+61;Sunset Blvd.;Drama;1950;GENRE_07
+22;It's a Wonderful Life;Drama;1946;GENRE_07
+47;Casablanca;Drama;1942;GENRE_07
+99;Citizen Kane;Drama;1941;GENRE_07
+65;The Great Dictator;Comedy;1940;GENRE_05
+49;Modern Times;Comedy;1936;GENRE_05
+54;City Lights;Comedy;1931;GENRE_05
+100;M;Crime;1931;GENRE_06

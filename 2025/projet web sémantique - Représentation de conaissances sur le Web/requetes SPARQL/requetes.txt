@@ -1,0 +1,49 @@
+PREFIX iut: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/>
+PREFIX film: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/Film/> 
+PREFIX genre: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/Genre/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+
+CONSTRUCT{
+    ?filmLocal owl:sameAs ?filmWDT ;
+               iut:award ?award.
+}
+WHERE { 
+    ?filmLocal a iut:Film ;
+               iut:nom ?nomFilmLocal.
+                 
+    SERVICE <https://query.wikidata.org/bigdata/namespace/wdq/sparql> { 
+        ?filmWDT wdt:P31 wd:Q11424 ;
+                 rdfs:label ?nomFilmWDT ;
+                 p:P166 ?statementAward.
+       	 ?statementAward ps:P166 ?award.
+        FILTER (LANG(?nomFilmWDT) = "en")
+    }
+        
+    FILTER (str(?nomFilmLocal) = str(?nomFilmWDT)) # Lier en comparant les labels
+}
+LIMIT 10
+
+
+//Réponse à notre question 
+PREFIX iut: <https://cours.iut-orsay.fr/npbd/projet/MIRGHANE/>
+
+ SELECT ?nomGenre (COUNT(?genre) AS ?nbAwardsReçus)
+    WHERE {
+      ?genre a iut:Genre;
+             iut:nom ?nomGenre.
+      ?film a iut:Film;
+            iut:nom ?nomFilm;
+            iut:aPourGenre ?genre;
+            iut:award ?medailleAward.
+    }
+    GROUP BY ?genre ?nomGenre
+    ORDER BY DESC(?nbAwardsReçus)
+    LIMIT 100
