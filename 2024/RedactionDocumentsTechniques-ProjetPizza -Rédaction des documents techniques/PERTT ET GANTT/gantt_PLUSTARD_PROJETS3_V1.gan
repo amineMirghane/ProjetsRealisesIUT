@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-11-25" view-index="0" gantt-divider-location="676" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="524" order="0"/>
+        <field id="tpd4" name="Date de début" width="40" order="1"/>
+        <field id="tpd5" name="Date de fin" width="111" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="29" name="MISE EN PLACE DU SYSTEME" color="#8cb6ce" meeting="false" start="2023-12-27" duration="3" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+            <task id="34" name="Rédaction d'un guide d'utilisation de l'application pour l'utilisateur" color="#8cb6ce" meeting="false" start="2023-12-27" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="65" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="65" name="Envoi de la version finale du site web et des différentes application" color="#8cb6ce" meeting="false" start="2023-12-28" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true"/>
+        </task>
+        <task id="28" name="MISE EN PLACE D'UNE INTERFACE POUR LE GESTIONNAIRE" color="#8cb6ce" meeting="false" start="2023-12-12" duration="6" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+            <task id="33" name="Définir les différents objets (classes,attribut de classe)" color="#8cb6ce" meeting="true" start="2023-12-12" duration="0" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="59" name="Réalisation du diagramme des classes" color="#8cb6ce" meeting="false" start="2023-12-12" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="60" name="Connecter la base de données au fichier java" color="#8cb6ce" meeting="false" start="2023-12-14" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="61" type="2" difference="0" hardness="Strong"/>
+                <depend id="62" type="2" difference="0" hardness="Strong"/>
+                <depend id="63" type="2" difference="0" hardness="Strong"/>
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+                <depend id="66" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="61" name="Implémentation rubrique  &quot;MAJ Liste Recette&quot;" color="#8cb6ce" meeting="false" start="2023-12-15" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="62" name="Implémentation rubrique  &quot;Mettre en avant pizza&quot;" color="#8cb6ce" meeting="false" start="2023-12-15" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="66" name="Implémentation rubrique  &quot;Consulter stats&quot;" color="#8cb6ce" meeting="false" start="2023-12-15" duration="2" complete="0" thirdDate="2023-11-27" thirdDate-constraint="0" expand="true">
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="63" name="Implémentation rubrique  &quot;Créer le stock&quot;" color="#8cb6ce" meeting="false" start="2023-12-15" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="64" name="Réalisation des tests des fonctionnalités de l'application pour l'administrateur" color="#8cb6ce" meeting="false" start="2023-12-19" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="27" name="MISE EN PLACE D'UNE APPLICATION POUR LE LIVREUR" color="#8cb6ce" meeting="false" start="2023-12-06" duration="15" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+            <task id="32" name="Identifier des problèmes à résoudre  dans le contexte  de la livraison de commandes aux clients" color="#8cb6ce" meeting="false" start="2023-12-12" duration="4" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="54" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="54" name="trouver les solutions algorithmiques pour résoudre les problèmes identifiés" color="#8cb6ce" meeting="false" start="2023-12-18" duration="4" complete="0" thirdDate="2023-11-29" thirdDate-constraint="0" expand="true">
+                <depend id="56" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="55" name="Réaliser Diagramme de Classes" color="#8cb6ce" meeting="false" start="2023-12-06" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="57" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="56" name="Réalisation du codage en JAVA des solutions algorithmiques" color="#8cb6ce" meeting="false" start="2023-12-22" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="58" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="57" name="Création des fonctions pour l'interface du livreur" color="#8cb6ce" meeting="false" start="2023-12-07" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="58" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="58" name="Réalisation des tests des fonctionnalités de l'application  pour le livreur" color="#8cb6ce" meeting="false" start="2023-12-25" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="26" name="MISE EN PLACE D'UNE APPLICATION POUR LE PIZZAIOLO" color="#8cb6ce" meeting="false" start="2023-12-12" duration="7" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="false">
+            <task id="31" name="Définir les différents objet(classes,attribut  de classe)" color="#8cb6ce" meeting="false" start="2023-12-12" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="49" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="49" name="Réalisation du diagramme de classes" color="#8cb6ce" meeting="false" start="2023-12-14" duration="2" complete="0" thirdDate="2023-11-29" thirdDate-constraint="0" expand="true">
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="50" name="Connecter la base de données au fichier java" color="#8cb6ce" meeting="false" start="2023-12-18" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+                <depend id="52" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="51" name="Création fonctions commandes en cours de préparation" color="#8cb6ce" meeting="false" start="2023-12-19" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="53" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" name="Création fonction commandes prêtes à être livrées" color="#8cb6ce" meeting="false" start="2023-12-19" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="1" expand="true">
+                <depend id="53" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="53" name="Réalisation des tests des fonctionnalités de l'application pour le pizzaiolo" color="#8cb6ce" meeting="false" start="2023-12-20" duration="1" complete="0" thirdDate="2023-11-29" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="25" name="IMPLEMENTATION DE LA BASE DE DONNEES DANS LE SITE WEB" color="#8cb6ce" meeting="false" start="2023-12-12" duration="7" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="false">
+            <task id="30" name="Ecriture du script de création des tables" color="#8cb6ce" meeting="false" start="2023-12-12" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="43" name="Insertion des données  dans les tables crées" color="#8cb6ce" meeting="false" start="2023-12-13" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="44" name="Créer des requêtes de test pour chaque table" color="#8cb6ce" meeting="false" start="2023-12-14" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="45" type="2" difference="0" hardness="Strong"/>
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" name="Réaliser les requêtes et les vues associés au  fonctionnalités et aux maquettes d’écran" color="#8cb6ce" meeting="false" start="2023-12-15" duration="3" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true"/>
+            <task id="46" name="Implémenter les triggers et leurs fonctions PL/SQL pour le traitement automatique d'évennementde modification de la base de données" color="#8cb6ce" meeting="false" start="2023-12-15" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="47" name="Attribuer les droits d'accès aux différents acteurs du projet à la base de données" color="#8cb6ce" meeting="false" start="2023-12-13" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" name="Réalisation des tests des fonctionnalités de la base de données" color="#8cb6ce" meeting="false" start="2023-12-19" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="23" name="CREATION D'UN SITE WEB POUR LE CLIENT" color="#8cb6ce" meeting="false" start="2023-12-07" duration="10" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="false">
+            <task id="24" name="Réalisation de la charte graphique" color="#8cb6ce" meeting="false" start="2023-12-07" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" name="Ecriture du CSS en adéquation avec la charte graphique" color="#8cb6ce" meeting="false" start="2023-12-08" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" name="Adapter le site web au contexte d'utilisation (utilisation sur mobile, sur pc...)" color="#8cb6ce" meeting="false" start="2023-12-12" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true"/>
+            <task id="37" name="Réalisation en HTML et PHP du contenu du site web (frontend)" color="#8cb6ce" meeting="false" start="2023-12-07" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="38" name="Implémentation d'une rubrique &quot;pizza&quot; sur le site" color="#8cb6ce" meeting="false" start="2023-12-08" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" name="Implémentation d'une rubrique &quot;produit&quot; sur le site" color="#8cb6ce" meeting="false" start="2023-12-08" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Relier les données du site web coté serveur à la base de données (backend)" color="#8cb6ce" meeting="false" start="2023-12-11" duration="4" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="41" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="41" name="Mettre un lien de redirection permettant de réaliser une simulation de paiement" color="#8cb6ce" meeting="false" start="2023-12-15" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" name="Réalisation des tests des fonctionnalités du site web" color="#8cb6ce" meeting="false" start="2023-12-18" duration="3" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="22" name="INITIALISATION DU PROJET" color="#8cb6ce" meeting="false" start="2023-12-01" duration="7" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="false">
+            <task id="7" name="Rendez-vous avec le client sur la méthodologie" color="#8cb6ce" meeting="false" start="2023-12-01" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+                <depend id="32" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Créer le diagramme de cas d'utilisation représentant le système qui permet de commander les pizzas côté client" color="#8cb6ce" meeting="false" start="2023-12-04" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="Créer le diagramme de cas d'utilisation représentant la gestion de livraison des commandes" color="#8cb6ce" meeting="false" start="2023-12-04" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="Créer le diagramme de cas d'utilisation représentant la gestion des stocks, des menus" color="#8cb6ce" meeting="false" start="2023-12-04" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="Créer le diagramme de cas d'utilisation représentant  la gestion de la préparation de commandes" color="#8cb6ce" meeting="false" start="2023-12-04" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="Réaliser le MCD" color="#8cb6ce" meeting="false" start="2023-12-05" duration="3" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="Réaliser le dictionnaire de données correspondant au MCD" color="#8cb6ce" meeting="false" start="2023-12-08" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+                <depend id="32" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" name="Réaliser les maquettes du site web pour le client" color="#8cb6ce" meeting="false" start="2023-12-05" duration="2" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" name="Réaliser la maquette de l'interface pour le pizzaiolo" color="#8cb6ce" meeting="false" start="2023-12-05" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" name="Réaliser la maquette de l'interface pour le livreur" color="#8cb6ce" meeting="false" start="2023-12-05" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" name="Réaliser la maquette de l'interface de l'administrateur" color="#8cb6ce" meeting="false" start="2023-12-05" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Réaliser le graphe de navigabilité" color="#8cb6ce" meeting="false" start="2023-12-07" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" name="Réalisation du MCT" color="#8cb6ce" meeting="false" start="2023-12-08" duration="1" complete="0" thirdDate="2023-12-01" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Amine" function="Default:0" contacts="amine" phone="06892645"/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
