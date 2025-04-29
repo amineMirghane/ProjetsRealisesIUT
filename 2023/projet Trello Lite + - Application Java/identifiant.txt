@@ -1,0 +1,7 @@
+Laurent:
+mail : laurent
+mdp  : root
+
+Amine:
+mail : amine
+mdp  : root
