@@ -1,0 +1,66 @@
+version: "2.2"
+
+services:
+  ## Les ports 
+  # localhost:8787 => Le RStudio
+  # localhost:8788 => Le Phpmyadmin
+  # localhost:8789 => Le MYSql
+  # localhost:3838 => Shiny
+  # Identifiant de la base de donnée db:db (toutes les valeurs c'est db dans l'url)
+
+  # Base de données MySQL
+  db:
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: db
+      MYSQL_DATABASE: db
+      MYSQL_USER: db
+      MYSQL_PASSWORD: db
+    ports:
+      - "8789:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./Projet-complet.sql:/docker-entrypoint-initdb.d/Projet-complet.sql
+
+  # Interface PhpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_USER: db
+      PMA_PASSWORD: db
+      MYSQL_ROOT_PASSWORD: db
+      UPLOAD_LIMIT: 5G
+    ports:
+      - "8788:80"
+
+  # Environnement RStudio
+  rstudio:
+    image: rocker/rstudio
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+      - "3838:3838"
+    volumes:
+      - ./data/rstudio:/home/rstudio/
+      - ./scripts_R:/home/rstudio/scripts_R
+    depends_on:
+      - db
+    environment:
+      DISABLE_AUTH: "true"
+    command: >
+      sh -c "apt-get update &&
+            apt-get install -y zlib1g-dev libcurl4-openssl-dev libmysqlclient-dev python3-pip libicu-dev build-essential gfortran libblas-dev liblapack-dev &&
+            pip3 install --break-system-packages 'numpy<2' &&
+            pip3 install --break-system-packages mysql-connector-python scikit-learn scikit-surprise sqlalchemy pandas pymysql &&
+            /init"
+
+
+
+volumes:
+  db_data:
+    driver: local
