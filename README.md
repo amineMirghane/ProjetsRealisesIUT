@@ -6,10 +6,13 @@ Ce portfolio regroupe une sélection de projets réalisés au cours de ma scolar
 
 Ce portfolio contient une variété de projets:
 
+- Création de base de données
 - Applications web
 - Applications mobiles
 - Projets de développement logiciel
+- Représentation de connaissances sur le Web
 - Documents techniques (WBS, PBS, Pertt, MCD, SR,...)
+- Rapport de Stage d'entreprise
 
 
 ## Exploration
