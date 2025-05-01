@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+body
+{
+	background-color:#696969;
+	color:white;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+	text-align: center;
+	margin:0;
+}
+
+.Logo1, .Logo3
+{
+	max-width: 200px; 
+	width:auto;
+	max-height: 150px;
+	height: auto; 
+}
+
+.Logo2
+{
+	max-width: 200px; 
+	width:auto;
+	max-height: 150px;
+	height: auto; 
+}
+
+.Titre
+{
+		font-size: 40px;
+		color:orange;
+		
+}
+
+
+p, ul
+{
+	font-size: 20px;		
+}
+	
+.SousTitre
+{
+		font-size: 30px;
+		color:orange;
+		
+}
+
+/*Menu Deroulant*/
+	
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: orange;
+    position: sticky;
+    top: 0px;
+	display:flex;
+}
+nav ul{
+    list-style-type: none;
+	margin-top:0;
+	display: flex;
+	width:80%;
+}
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav a:hover{
+    color: white;
+    border-bottom: 2px solid gold;
+}
+.menu{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.menu li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.menu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.menu a:hover{
+    border-bottom: none;
+    background-color: orange;
+}
+.deroulant > a::after{
+    content:"▼";
+    font-size: 12px;
+}
+nav > ul li:hover .menu{
+    display: block;
+}
+
+/*Placement des logos du club en flex*/
+
+.imageClubs
+{
+	display: flex;	
+	justify-content: center;
+	color: black;
+	font-size:15 px;
+}
+
+/*Footer*/
+
+Footer
+{
+		padding: 10px 20px;
+        background: orange;
+        color: white;
+}
+
+/*Les listes*/
+.el1, .el2, .el3, .el4
+{
+	margin: auto;
+	width: max-content;
+}
+
+/*Media Query: */
+
+/*body{
+background-image:"       " ;	
+background-size:cover;	
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+
+media query
+{
+	
+	
+}
