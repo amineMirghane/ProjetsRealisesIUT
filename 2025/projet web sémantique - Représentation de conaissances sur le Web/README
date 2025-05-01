@@ -1,0 +1,11 @@
+# Présentation du projet réalisé
+
+Le projet a pour objectif d'identifier, parmi les genres des 100 films les plus populaires, ceux qui obtiennent le plus d’Oscars. Pour cela, nous utilisons des données issues d’un fichier tabulaire répertoriant les 100 meilleurs films, disponible sur Kaggle sous le nom **« Top 100 IMDB Movies »**.
+
+Afin de faciliter l’exploitation des données dans notre ontologie, nous avons ajouté une colonne `ID_GENRE` pour lier chaque film à son ou ses genres. Le fichier CSV local contient donc les informations sur les 100 meilleurs films, accompagnées du nom et de l’identifiant de leur genre respectif.
+
+Le fichier CSV est accessible dans le dossier **Fichiers CSV**, et une version tableur est disponible dans le dossier **Fichiers Excel**. Ce fichier a ensuite été converti en jeu de données RDF à l’aide de l’outil **Ontotext Refine**.
+
+En complément, nous avons récupéré sur **Wikidata** des informations concernant les Oscars attribués aux films. Ces données ont été utilisées pour enrichir et relier notre graphe local grâce à des requêtes **SPARQL**.
+
+Cela nous a permis ainsi de croiser les genres des films avec les Oscars obtenus, afin de répondre à la question posée dans le cadre du projet.
